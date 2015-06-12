@@ -1,0 +1,32 @@
+Algoritmo SHT - priority: example_hyperarc
+Q = {t(0), }
+Q --> t
+costo di a aggiornato da inf a 10
+Q <-- a
+costo di b aggiornato da inf a 7
+Q <-- b
+costo di c aggiornato da inf a 14
+Q <-- c
+costo di d aggiornato da inf a 12
+Q <-- d
+Q = {b(7), a(10), d(12), c(14), }
+Q --> b
+costo di u aggiornato da inf a 22
+Q = {a(10), d(12), c(14), }
+Q --> a
+costo di u aggiornato da 22 a 14.8
+Q = {d(12), c(14), }
+Q --> d
+costo di u aggiornato da 14.8 a 13.2727
+Q = {c(14), }
+Q --> c
+Expected cost con priorità
+u - 13.2727 - successore/i: b a d 
+a - 10 - successore/i: t 
+b - 7 - successore/i: t 
+c - 14 - successore/i: t 
+d - 12 - successore/i: t 
+t - 0 - successore/i: 
+Frequenze cumulate
+u - 11
+Numero estrazioni dalla coda: 5

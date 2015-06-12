@@ -1,0 +1,77 @@
+Algoritmo SHT: example_hyperpath
+Q = {j, }
+Q --> j
+costo di 4 aggiornato da inf a 2
+Q <-- 4
+costo di 5 aggiornato da inf a 2
+Q <-- 5
+Q = {4, 5, }
+Q --> 4
+costo di d1 aggiornato da inf a 2
+Q <-- d1
+Q = {5, d1, }
+Q --> 5
+costo di d3 aggiornato da inf a 2
+Q <-- d3
+costo di d4 aggiornato da inf a 2
+Q <-- d4
+Q = {d1, d3, d4, }
+Q --> d1
+costo di l1 aggiornato da inf a 24
+Q <-- l1
+Q = {d3, d4, l1, }
+Q --> d3
+costo di l3 aggiornato da inf a 12
+Q <-- l3
+Q = {d4, l1, l3, }
+Q --> d4
+costo di l4 aggiornato da inf a 17
+Q <-- l4
+Q = {l1, l3, l4, }
+Q --> l1
+costo di 1 aggiornato da inf a 34
+Q <-- 1
+Q = {l3, l4, 1, }
+Q --> l3
+costo di 2  aggiornato da inf a 18
+Q <-- 2 
+Q = {l4, 1, 2 , }
+Q --> l4
+costo di 2  aggiornato da 18 a 18
+Q = {1, 2 , }
+Q --> 1
+costo di i aggiornato da inf a 36
+Q = {2 , }
+Q --> 2 
+costo di d2 aggiornato da inf a 18
+Q <-- d2
+Q = {d2, }
+Q --> d2
+costo di l2 aggiornato da inf a 30
+Q <-- l2
+Q = {l2, }
+Q --> l2
+costo di 1 aggiornato da 34 a 32
+Q <-- 1
+Q = {1, }
+Q --> 1
+costo di i aggiornato da 36 a 34
+Expected cost senza priorità
+i - 34 - successore/i: 1 
+1 - 32 - successore/i: l1 l2 
+l1 - 24 - successore/i: d1 
+l2 - 30 - successore/i: d2 
+d1 - 2 - successore/i: 4 
+d2 - 18 - successore/i: 2  
+4 - 2 - successore/i: j 
+2  - 18 - successore/i: l3 l4 
+l3 - 12 - successore/i: d3 
+l4 - 17 - successore/i: d4 
+d3 - 2 - successore/i: 5 
+d4 - 2 - successore/i: 5 
+5 - 2 - successore/i: j 
+j - 0 - successore/i: 
+Frequenze cumulate
+1 - 6
+2  - 10
+Numero estrazioni dalla coda: 14

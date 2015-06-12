@@ -1,0 +1,5 @@
+n
+descriptor stop_vertex lat lon expected_cost comb_freq name
+
+m
+i j edge_cost(distance or wait) edge_prob(1 for normal edge) name

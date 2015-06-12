@@ -1,0 +1,5 @@
+n
+id stop_vertex lat lon name
+
+m
+i j weight(cost or freq) name
